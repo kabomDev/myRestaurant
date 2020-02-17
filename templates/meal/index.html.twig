@@ -1,0 +1,20 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Page d'accueil{% endblock %}
+{% block monTitreH1 %}Carte du restaurant{% endblock %}
+{% block body %}
+<main class="meal-cart container mt-5">
+    {% for meal in meals %}
+        <div class="article">
+            <div class="card">
+                <img src="{{asset('images/meals/'~ meal.photo)}} " class="card-img-top" alt="{{ meal.name }}">
+                <div class="card-body">
+                    <h5 class="card-title">{{meal.name}}</h5>
+                    <p class="card-text">{{meal.description}}</p>
+                    <p class="price">{{meal.salePrice}} €</p>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+</main> 
+{% endblock %}

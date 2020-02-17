@@ -1,0 +1,42 @@
+/* font-family: 'Playfair Display', serif; */
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+h1{
+    font-family: 'Playfair Display', serif;
+}
+
+p{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+.navbar{
+    padding: 2em;
+}
+
+.navbar-brand{
+    font-family: 'Pacifico', cursive;
+    font-size: 2.5rem;
+    color: rgb(253, 131, 127);
+}
+
+.meal-cart{
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.article{
+    width: 30%;
+    margin: 1%;
+}
+
+.card img{
+    height: 200px;
+}
+
+.price{
+    font-size: 0.8em;
+}
